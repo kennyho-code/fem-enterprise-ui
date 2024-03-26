@@ -13,9 +13,10 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build Node
         uses: actions/setup-node@v3
+      - run: npm ci
       - run: npm run build
 
-  test:
+  unit-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
