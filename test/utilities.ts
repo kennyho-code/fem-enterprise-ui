@@ -1,6 +1,7 @@
 import type { ReactElement } from 'react';
 import { render as renderComponent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import '@testing-library/jest-dom/extend-expect';
 
 type RenderOptions = Parameters<typeof renderComponent>[1];
 
